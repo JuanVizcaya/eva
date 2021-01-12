@@ -38,7 +38,7 @@ La API responde con un "json" que contiene los atributos de la petición y de la
 Cuando el servidor virtual se encuentra corriendo de manera correcta, se puede enviar una petición a la API de imagen térmica.
 
 #### Endpoint:
-`http://localhost:4700/image`
+`GET: http://localhost:4700/image`
 
 #### Parámetros:
 | Nombre | Tipo | Requerido | Default | Descripción
