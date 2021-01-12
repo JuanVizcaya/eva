@@ -1,0 +1,5 @@
+Flask==1.1.2
+Flask-RESTful==0.3.8
+numpy==1.19.5
+Pillow==8.1.0
+requests==2.25.1
