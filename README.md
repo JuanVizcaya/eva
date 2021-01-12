@@ -1,15 +1,15 @@
 # Eva backend challenge 
-Se trata de una app Flask/flask_restful mediante la cual se hace una petición al servdor de una cámara termográfica para procesar y almacenar una imagen .tif y convertirla a jpg
-La API responde con un json que contiene los atributos de la petición y de la imagen.
+"Eva backend challenge" es una app "Flask/flask_restful", donde su principal función es hacer peticiones al servidor de una cámara termográfica para procesar y almacenar una imagen .tif y convertirla a jpg.
+La API responde con un "json" que contiene los atributos de la petición y de la imagen.
 
 ## Requisitos
-#### Se requiere la versión correcta de python
+#### Se requiere la versión correcta de Python.
 - Python 3.7.9
-##### Creación de entorno virtual con anaconda:
+##### Creación de un entorno virtual con Anaconda:
 `conda create -n eva python=3.7.9`
 
 `conda activate eva`
-##### Creación de entorno virtual con virtualenv:
+##### Creación de un entorno virtual con virtualenv:
 `virtualenv eva --python=python3.7.9`
 
 `source eva/bin/activate`
@@ -35,8 +35,7 @@ La API responde con un json que contiene los atributos de la petición y de la i
 * Running on http://localhost:4700/ (Press CTRL+C to quit)
 ```
 ## Utilización
-Una vez que el servidor virtual se encuentra corriendo correctamente, se puede enviar una petición a la API de imagen térmica
-, los parámetros son opcionales, sin embargo, es preferible enviarlos para que la imagen se guarde con sus atributos correctos.
+Cuando el servidor virtual se encuentra corriendo de manera correcta, se puede enviar una petición a la API de imagen térmica.
 
 #### Endpoint:
 `http://localhost:4700/image`
@@ -46,6 +45,8 @@ Una vez que el servidor virtual se encuentra corriendo correctamente, se puede e
 | ----------- | ----------- | ----------- | ----------- | ------------------- |
 | **session** | Text | Opcional | Token único hexadecimal | ID de sesión relacionada con el usuario. |
 | **side** | Text |  Opcional  | center | Lado en el que se tomó la imagen, opciones: left, right, center. |
+
+**Nota:** Dichos parámetros son opcionales, sin embargo, es preferible enviarlos para que la imagen se guarde con sus atributos correctos.
 
 #### Ejemplo:
 `http://localhost:4700/image?session=jgstbh-4jfk-lkfds&side=left`
@@ -62,4 +63,4 @@ Una vez que el servidor virtual se encuentra corriendo correctamente, se puede e
 }
 ```
 
-**Nota:** la url de la imagen ("image_url") queda disponible para su descarga o posible visualización en una pestaña del navegador.
+**Nota:** La url de la imagen ("image_url") queda disponible para su descarga y/o posible visualización, en una pestaña del navegador.
