@@ -21,7 +21,7 @@ def api_args():
     return parser.parse_args()
 
 class TIF(Resource):
-    """Objeto Resource para API de imagen térmica"""
+    """Objeto contructor para la API de imagen térmica"""
     def get(self):
         """método GET para el endpoint de la imagen tif
         Returns:
@@ -30,7 +30,6 @@ class TIF(Resource):
         args = api_args()
         session_name = args['session']
         side = args['side']
-
         response = {
         'session': session_name,
         'side': side
