@@ -1,5 +1,5 @@
-# Eva backend challenge 
-"Eva backend challenge" es una app "Flask/flask_restful", donde su principal función es hacer peticiones al servidor de una cámara termográfica para procesar y almacenar una imagen .tif y convertirla a jpg.
+# Imagen térmica
+Es una app "Flask/flask_restful", donde su principal función es hacer peticiones al servidor de una cámara termográfica para procesar y almacenar una imagen .tif y convertirla a jpg.
 La API responde con un "json" que contiene los atributos de la petición y de la imagen.
 
 ## Requisitos
