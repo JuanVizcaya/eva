@@ -6,26 +6,26 @@ La API responde con un "json" que contiene los atributos de la petición y de la
 #### Se requiere la versión correcta de Python.
 - Python 3.7.9
 ##### Creación de un entorno virtual con Anaconda:
-`conda create -n eva python=3.7.9`
+`conda create -n env python=3.7.9`
 
-`conda activate eva`
+`conda activate env`
 ##### Creación de un entorno virtual con virtualenv:
-`virtualenv eva --python=python3.7.9`
+`virtualenv env --python=python3.7.9`
 
-`source eva/bin/activate`
+`source env/bin/activate`
 
 ## Instalación
 1. Clonar proyecto: 
-`git clone https://github.com/JuanVizcaya/eva.git`
+`git clone https://github.com/JuanVizcaya/termicimage.git`
 
-2. Entrar a la carpeta "eva": 
-`cd eva`
+2. Entrar a la carpeta "termicimage": 
+`cd termicimage`
 
 3. Instalar librerías de python: 
 `pip install -r requirements.txt`
 
 ## Ejecución
-- Ejecutar dentro de la carpeta "eva": `python app.py`
+- Ejecutar dentro de la carpeta "termicimage": `python app.py`
 ```
 * Serving Flask app "app" (lazy loading)
 * Environment: production
